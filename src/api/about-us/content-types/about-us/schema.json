@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "About us Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "about": {
+      "type": "richtext"
+    },
+    "featuredimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "AboutHeading": {
+      "type": "string"
+    },
+    "Aboutsubheading": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    }
+  }
+}

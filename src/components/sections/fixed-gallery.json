@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_fixed_galleries",
+  "info": {
+    "displayName": "Fixed Paralax Gallery",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Heading": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "kind": "singleType",
+  "collectionName": "portfolios",
+  "info": {
+    "singularName": "portfolio",
+    "pluralName": "portfolios",
+    "displayName": "Portfolio Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.sections"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "twoColumns": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.2-columns-right-image"
+    },
+    "fixedParalax": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.fixed-gallery"
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "review": {
+      "type": "richtext"
+    },
+    "bannerImage2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "review2": {
+      "type": "richtext"
+    },
+    "imageSlider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.gallery-images-only"
+    },
+    "review3": {
+      "type": "richtext"
+    },
+    "bannerImage3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    }
+  }
+}

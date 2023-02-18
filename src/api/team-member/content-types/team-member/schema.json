@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_members",
+  "info": {
+    "singularName": "team-member",
+    "pluralName": "team-members",
+    "displayName": "Team Member",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "memberPhoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "position": {
+      "type": "string"
+    },
+    "excerpt": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon",
+        "maxLengthCharacters": 300
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon",
+        "maxLengthCharacters": null
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

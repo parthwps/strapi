@@ -1,0 +1,63 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_pages",
+  "info": {
+    "singularName": "contact-page",
+    "pluralName": "contact-pages",
+    "displayName": "Contact Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "phone2": {
+      "type": "string"
+    },
+    "fax": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "map_url": {
+      "type": "text"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "houzz": {
+      "type": "string"
+    },
+    "featuredimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "office_address": {
+      "type": "text"
+    },
+    "mailing_address": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_gallery_images_onlies",
+  "info": {
+    "displayName": "Gallery Images Only"
+  },
+  "options": {},
+  "attributes": {
+    "Images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Heading": {
+      "type": "string"
+    }
+  }
+}
